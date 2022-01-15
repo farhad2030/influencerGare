@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo h1 {
+  font-size: 1.8em;
+}
+nav .menu {
+  display: flex;
+}
+nav .menu ul li {
+  list-style: none;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  display: inline-block;
+  color: black;
+}
+/* -------------
+hero section
+----------------- */
+.heroSection {
+  display: flex;
+  padding-top: 50px;
+}
+
+.heroText h1 {
+  font-size: 3.5em;
+}
+.heroText p {
+  font-size: 1.5em;
+  padding: 30px 0px;
+}
+.primary-btn {
+  border: none;
+  background-color: #e02c6d;
+}
+.primary-btn a {
+  display: block;
+  color: #ffff;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-size: 1.5em;
+}
+.round-btn {
+  border-radius: 41px;
+}
+.primary-btn a span {
+  display: inline-block;
+  transform: translateX(5px);
+  transition: transform 1s;
+}
+.primary-btn:hover span {
+  display: inline-block;
+  transform: translateX(10px);
+}
+/* -------------------
+company logo
+----------------------- */
+.companyLogo {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.companyLogo img {
+  padding: 10px;
+}
+
+/* ----------------
+popular collection
+-------------------- */
+
+.popularCollection {
+  text-align: center;
+  padding: 40px 10px;
+}
+.popularCollection h1 {
+  font-size: 2em;
+  padding: 20px 10px;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  margin: 15px;
+}
+.cardBody {
+  padding: 10px;
+  text-align: left;
+}
+.cardBody p {
+  font-size: 0.8em;
+  color: #b3b3bb;
+}
+.star i {
+  color: #fb8200;
+  font-size: 0.8em;
+}
+/* ---------------
+footer
+------------------- */
+footer {
+  background-color: #0a0826;
+  color: #ffff;
+  text-align: center;
+  padding: 40px 0px;
+}
+footer .socialMedia {
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+/*-------------
+ testimonial
+--------------------- */
+.testmonials {
+  padding: 40px 30px;
+  text-align: center;
+}
+.testmonials h1 {
+  font-size: 2.5em;
+}
+.testmonial p {
+  width: 80%;
+}
+.testmonial img {
+  width: 70px;
+  border-radius: 50%;
+  margin: 40px;
+}
+.testmonial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------
+--media query
+------------------ */
+@media (max-width: 688px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .heroText {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 988px) {
+  .cardContainer {
+    display: grid;
+    grid-column: 1fr 1fr;
+  }
+  .heroSection {
+    margin: 40px;
+  }
+}
